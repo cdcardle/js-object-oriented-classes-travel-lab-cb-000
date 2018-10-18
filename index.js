@@ -23,7 +23,7 @@ class Route {
     return streets + avenues;
   }
 
-  estimatedTime() {
-    return Math.ceil(this.blocksTravelled() / 3)
+  estimatedTime(peakHours) {
+    return peakHours ? (this.blocksTravelled() / 2) : (this.blocksTravelled() / 3)
   }
 }
