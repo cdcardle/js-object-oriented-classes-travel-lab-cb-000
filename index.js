@@ -15,7 +15,7 @@ class Route {
     this.endingLocation = {horizontal: endingLocation.horizontal, vertical: endingLocation.vertical};;
   }
 
-  blockTravelled() {
+  blocksTravelled() {
     let streets = (this.endingLocation.vertical - this.startingLocation.vertical);
     let avenues = (this.endingLocation.horizontal - this.startingLocation.horizontal);
   }
