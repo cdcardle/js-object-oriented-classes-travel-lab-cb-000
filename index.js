@@ -11,7 +11,7 @@ class Driver {
 
 class Route {
   constructor(startingLocation, endingLocation) {
-    this.startingLocation = startingLocation;
+    this.startingLocation = {horizontal: startingLocation.horizontal, vertical: startingLocation.vertical};
     this.endingLocation = endingLocation;
   }
 }
