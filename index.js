@@ -22,4 +22,8 @@ class Route {
     let avenues = Math.abs(eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.startingLocation.horizontal));
     return streets + avenues;
   }
+
+  estimatedTime() {
+    return Math.ceil(this.blocksTravelled() / 3)
+  }
 }
