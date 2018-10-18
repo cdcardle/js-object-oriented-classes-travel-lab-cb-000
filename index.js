@@ -5,6 +5,6 @@ class Driver {
   }
 
   yearsExperienceFromBeginningOf(date) {
-    return new Date() - startDate;
+    return new Date() - startDate();
   }
 }
